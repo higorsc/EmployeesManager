@@ -25,7 +25,6 @@ namespace EmployeesManager
                     services.AddScoped<IEmployeesRepository, EmployeesRepository>();
                     services.AddScoped<IEmployeesService, EmployeesService>();
                     services.AddSingleton<Mapper>();
-                    services.AddSingleton<IDialogService, DialogService>();
                     services.AddHttpClient();
                 })
                 .Build();

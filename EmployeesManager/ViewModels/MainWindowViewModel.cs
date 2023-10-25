@@ -21,7 +21,7 @@ namespace EmployeesManager.ViewModels
         private static IEmployeesService _employeesService;
         private static Mapper _mapper;
 
-        public MainWindowViewModel(IEmployeesService employeesService, Mapper mapper, IDialogService dialogService)
+        public MainWindowViewModel(IEmployeesService employeesService, Mapper mapper)
         {
             _employeesService = employeesService;
             _mapper = mapper;
