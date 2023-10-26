@@ -1,0 +1,7 @@
+Installed dependencies for the project:
+
+microsoft.extensions.dependencyinjection\7.0.0
+microsoft.extensions.hosting\7.0.1
+microsoft.extensions.hosting.abstractions\7.0.0
+microsoft.extensions.http\7.0.0
+newtonsoft.json\13.0.3
