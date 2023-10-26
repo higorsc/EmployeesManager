@@ -71,7 +71,8 @@ namespace EmployeesManager.Repositories
 
                 if (!response.IsSuccessStatusCode)
                 {
-                    throw new Exception("Unable to save employee details!");
+                    throw new Exception($"Unable to save employee details!" +
+                        $"{responseContent}");
                 }
 
                 return JsonConvert.DeserializeObject<EmployeeDTO>(responseContent);
