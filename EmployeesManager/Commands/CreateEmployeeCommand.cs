@@ -12,6 +12,8 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using static EmployeesManager.Models.Enums.GenderEnum;
+using System.Windows;
+using EmployeesManager.Views;
 
 namespace EmployeesManager.Commands
 {
@@ -59,6 +61,8 @@ namespace EmployeesManager.Commands
             }
             catch (Exception ex)
             {
+                var dialog = new ErrorWindow(ex.Message);
+                dialog.ShowDialog();
             }
             _action?.Invoke(parameter);
         }
